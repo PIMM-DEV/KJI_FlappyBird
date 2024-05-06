@@ -259,8 +259,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c34a89ebed9174baa132e82603f676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 3560841458523069414, guid: 733b5c35d47b2c646aecaa5b7ad7bca2, type: 3}
+  bullet1: {fileID: 3560841458523069414, guid: 733b5c35d47b2c646aecaa5b7ad7bca2, type: 3}
+  bullet2: {fileID: 6156922955963637378, guid: 1ceb5573f1a6da04299f339894653aa4, type: 3}
   spawnCoolTime: 0.2
+  shotMode: 0
 --- !u!1 &713419506
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpPower: 3.5
   LRSpeed: 2
+  shotMode: 0
 --- !u!114 &713419513
 MonoBehaviour:
   m_ObjectHideFlags: 0
