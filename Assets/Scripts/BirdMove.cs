@@ -7,6 +7,7 @@ public class BirdJump : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] private float jumpPower;
     [SerializeField] private float LRSpeed;
+    [SerializeField] private bool shotMode;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,17 @@ public class BirdJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            if (shotMode)
+            {
+                shotMode = false;
+            }
+            else
+            {
+                shotMode = true;
+            }
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector3.up* jumpPower;
