@@ -17,17 +17,6 @@ public class BirdJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            if (shotMode)
-            {
-                shotMode = false;
-            }
-            else
-            {
-                shotMode = true;
-            }
-        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector3.up* jumpPower;
