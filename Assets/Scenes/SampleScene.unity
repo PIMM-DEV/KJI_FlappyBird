@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 713419513}
   m_Layer: 0
   m_Name: Bird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -448,8 +448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df224492c20c8f47b7592a4ff742452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 3.5
-  LRSpeed: 2
+  jumpPower: 4
+  LRSpeed: 3
   shotMode: 0
 --- !u!114 &713419513
 MonoBehaviour:
@@ -476,9 +476,10 @@ GameObject:
   - component: {fileID: 783546867}
   - component: {fileID: 783546866}
   - component: {fileID: 783546865}
-  m_Layer: 0
+  - component: {fileID: 783546868}
+  m_Layer: 9
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: UpDownWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -595,6 +596,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &783546868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 783546864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf27e0b40464ce144b8808be1b2c9f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10000
+  Damage: 0
 --- !u!1 &1301457194
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,9 +623,10 @@ GameObject:
   - component: {fileID: 1301457197}
   - component: {fileID: 1301457198}
   - component: {fileID: 1301457199}
-  m_Layer: 0
+  - component: {fileID: 1301457200}
+  m_Layer: 9
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: UpDownWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -762,6 +778,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 10000
   Damage: 1
+--- !u!50 &1301457200
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301457194}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1366533704
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 7290478375194088831, guid: 3e74c1c9ce1aed644a64defe4f3a4fe1, type: 3}
+  obstacle: {fileID: 857058161589117622, guid: 43575c8efa06f0d4e8ce387057e7d42d, type: 3}
   spawnCoolTime: 2
 --- !u!4 &1366533706
 Transform:

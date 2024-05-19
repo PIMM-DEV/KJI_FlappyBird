@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pipe
   - Bullet
+  - UpDownWall
   layers:
   - Default
   - TransparentFX
@@ -13,12 +14,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Obstacle
+  - Bullet
+  - UpDownWall
+  - Pipe
+  - OnlyObstacle
   - 
   - 
   - 
