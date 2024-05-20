@@ -32,8 +32,5 @@ public class BirdJump : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         SceneManager.LoadScene("MenuScene");
-        if (Score.bestScore < Score.score) {
-            Score.bestScore = Score.score;
-        }
     }
 }
