@@ -5,7 +5,6 @@ using UnityEngine;
 public class ObstacleMove : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField]private int plusX = -1;
     [SerializeField]private int plusY = -1;
     [SerializeField] int pipeSpeed;
     Rigidbody2D rb;

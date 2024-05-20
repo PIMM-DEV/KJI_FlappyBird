@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BirdJump : MonoBehaviour
 {
@@ -26,6 +27,13 @@ public class BirdJump : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.RightArrow)) {
             transform.position += Vector3.right*Time.deltaTime*LRSpeed;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        SceneManager.LoadScene("MenuScene");
+        if (Score.bestScore < Score.score) {
+            Score.bestScore = Score.score;
         }
     }
 }
